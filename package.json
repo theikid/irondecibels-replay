@@ -8,5 +8,8 @@
       "source": "src/2022/index.html",
       "distDir": "./dist/2022"
     }
+  },
+  "staticFiles": {
+    "distDir": "dist"
   }
 }
