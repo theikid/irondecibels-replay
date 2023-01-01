@@ -1,11 +1,12 @@
 {
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "parcel-reporter-static-files-copy": "^1.4.0"
   },
   "targets": {
-  "2022": {
-    "source": "src/2022/index.html",
-    "distDir": "./dist/2022"
-  }
+    "2022": {
+      "source": "src/2022/index.html",
+      "distDir": "./dist/2022"
+    }
   }
 }
