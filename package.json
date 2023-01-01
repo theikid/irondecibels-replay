@@ -6,7 +6,8 @@
   "targets": {
     "2022": {
       "source": "src/2022/index.html",
-      "distDir": "./dist/2022"
+      "distDir": "./dist/2022",
+      "publicUrl": "/2022/"
     }
   },
   "staticFiles": {
