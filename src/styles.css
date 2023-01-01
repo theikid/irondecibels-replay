@@ -232,12 +232,6 @@ section {
    filter: blur(60px);
 }
 
-@media (min-width: 799px) {
-    .bgimage {
-        filter: blur(80px);
-    }
-}
-
 
 /* icons font */
 
