@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "parcel": "^2.8.2"
+  },
+  "targets": {
+  "2022": {
+    "source": "src/2022/index.html",
+    "distDir": "./dist/2022"
+  }
   }
 }
