@@ -141,7 +141,7 @@
             </div>
         </div>
         <div id="slideNumber">
-            1.
+            1/100.<span>albums & EPS of 2022</span>
         </div>
         <div class="slides">
             <section>
@@ -3660,13 +3660,24 @@
             viewDistance: 3,
             width: '100%',
             height: '100%',
+            keyboard: {
+                27: showHideMenu,
+                13: playAudio,
+                32: playAudio,
+                77: showHideMenu
+            }
         });
 
         var totalSlides = Reveal.getTotalSlides();
 
+        function showHideMenu() {
+            const checkbox = document.getElementById('my-trigger');
+            checkbox.checked = !checkbox.checked; 
+        }
+
         function changeSlideNumber() {
             var slideCount = document.getElementById("slideNumber");
-            slideCount.innerHTML = (Reveal.getState().indexh + 1) + "/" + totalSlides + ".<span>albums & EPS of 2022</span>";
+            slideCount.innerHTML = "<a onClick='Reveal.slide(0);' title='Back to Start' alt='Back to Start'>" + (Reveal.getState().indexh + 1) + "/" + totalSlides + ".<span>albums & EPS of 2022</span></a>";
         }
         
 
@@ -3693,8 +3704,7 @@
         });
 
         function changeSlide(slidenumber) {
-            const checkbox = document.getElementById('my-trigger');
-            checkbox.checked = !checkbox.checked;
+            showHideMenu();
             Reveal.slide(slidenumber);
         }
 

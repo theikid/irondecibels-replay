@@ -24,7 +24,7 @@ section {
     align-items: center;
 }
 
-#slideNumber {
+#slideNumber a {
     position: absolute;
     z-index: 99;
     font-size: 1rem;
@@ -41,9 +41,10 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-#slideNumber span {
+#slideNumber a span {
     margin-left: 0.5rem;
     margin-top: 0.125rem;
     font-size: 0.75rem;
@@ -59,11 +60,11 @@ section {
 }
 
 @media (min-width: 799px) {
-    #slideNumber {
+    #slideNumber a {
         flex-direction: row;
         top: 1.75rem;
     }
-    #slideNumber span {
+    #slideNumber a span {
         
     }
 }
